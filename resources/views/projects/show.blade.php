@@ -60,7 +60,7 @@
       </div>
 
       <div class="row col-med-9 col-lg-9 col-sm-9 pull-left" style = "background: white; margin: 10px" >
-        @include('partials.comments')
+          @include('partials.comments')
       </div>
     </div>
 

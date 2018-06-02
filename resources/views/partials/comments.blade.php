@@ -11,8 +11,8 @@
             
             <div class="panel-body">
                 <ul class="media-list">
-
-                @foreach($comments as $comment)
+  
+                @foreach($project->comments as $comment)
                     <li class="media">
                     <div class="media-left">
                         <img src="http://placehold.it/60x60" class="img-circle">
