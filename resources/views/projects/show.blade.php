@@ -96,7 +96,7 @@
                           <p>
                             {{ $comment->body }}  
                           </p>
-                          <b>Proof: </b>
+                          <b>Test</b>
                           <p>
                             {{ $comment->url }}
                           </p>
