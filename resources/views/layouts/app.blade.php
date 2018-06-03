@@ -66,10 +66,10 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i>All Projects </a></li>
-                                <li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i> All Users </a></li>
+                                <li><a href="{{ route('projects.index') }}"><i class="fas fa-tasks"></i>All Projects </a></li>
+                                <li><a href="{{ route('users.index') }}"><i class="fas fa-tasks"></i> All Users </a></li>
                                 <li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i> All Tasks </a></li>
-                                <li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i> All Companies </a></li>
+                                <li><a href="{{ route('companies.index') }}"><i class="fas fa-tasks"></i> All Companies </a></li>
                                 </ul>
                             </li>
 
@@ -81,8 +81,8 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i>All Projects </a></li>
-                                <li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i> All Users </a></li>
+                                <li><a href="{{ route('projects.index') }}"><i class="fas fa-tasks"></i>All Projects </a></li>
+                                <li><a href="{{ route('users.index') }}"><i class="fas fa-tasks"></i> All Users </a></li>
                                 <li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i> All Tasks </a></li>
                                 <!--<li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i></a></li>-->
                                 </ul>
