@@ -54,10 +54,26 @@
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
-                            
                             <li><a href="{{ route('companies.index') }}"><i class="far fa-building"></i> My Companies </a></li>
                             <li><a href="{{ route('projects.index') }}"><i class="fab fa-laravel"></i> My Projects </a></li>
                             <li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i> My Tasks </a></li>
+
+                            @if(Auth::user()->role_id == 1)
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    Admin <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i>All Projects </a></li>
+                                <li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i> All Users </a></li>
+                                <li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i> All Tasks </a></li>
+                                <li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i> All Companies </a></li>
+                                </ul>
+                            </li>
+
+                            @end
 
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
