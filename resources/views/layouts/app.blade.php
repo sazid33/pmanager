@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +13,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
+        crossorigin="anonymous">
+
 </head>
 <body>
     <div id="app">
@@ -49,9 +55,9 @@
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
                             
-                            <li><a href="{{ route('companies.index') }}">My Companies</a></li>
-                            <li><a href="{{ route('projects.index') }}">My Projects</a></li>
-                            <li><a href="{{ route('tasks.index') }}">My Tasks</a></li>
+                            <li><a href="{{ route('companies.index') }}"><i class="far fa-building"></i> My Companies </a></li>
+                            <li><a href="{{ route('projects.index') }}"><i class="fab fa-laravel"></i> My Projects </a></li>
+                            <li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i> My Tasks </a></li>
 
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">

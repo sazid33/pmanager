@@ -3,10 +3,10 @@
     <div class="col-md-12 col-sm-12 col-lg-12">
                 
         <!-- Fluid width widget -->        
-        <div class="panel panel-default">
+        <div class="panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title">
-                    <span class="glyphicon glyphicon-comment"></span>Recent Comments</h3>
+                    <i class="far fa-comment"></i> Recent Comments </h3>
             </div>
             
             <div class="panel-body">
