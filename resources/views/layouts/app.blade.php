@@ -73,6 +73,21 @@
                                 </ul>
                             </li>
 
+                            @elseif(Auth::user()->role_id == 2)
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    Moderator <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i>All Projects </a></li>
+                                <li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i> All Users </a></li>
+                                <li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i> All Tasks </a></li>
+                                <!--<li><a href="{{ route('tasks.index') }}"><i class="fas fa-tasks"></i></a></li>-->
+                                </ul>
+                            </li>
+
                             @endif
 
                             <li class="dropdown">
