@@ -19,7 +19,7 @@
       <!-- Example row of columns -->
       
       <div class="row container-fluid">
-
+        @include('partials.comments')
       <br>
         <form method="post" action="{{ route('comments.store') }}">
             {{ csrf_field() }} 
@@ -57,10 +57,6 @@
             </div>
         </form>
       </br>
-      </div>
-
-      <div class="row col-med-9 col-lg-9 col-sm-9 pull-left" style = "background: white; margin: 10px" >
-          @include('partials.comments')
       </div>
     </div>
 
